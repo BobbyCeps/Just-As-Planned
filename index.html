@@ -4,15 +4,15 @@
     <title>MAGICARPE FDP</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="pokedex.js"></script>
+    <script type="text/javascript" src="load.js"></script>
     <script type="text/javascript" src="menu.js"></script>
 </head>
-<body onload="pokedex()">
+<body onload="load_all()">
 <div id="wrapper">
 
  <div id="content_nom">  <!-- boite permettant de mettre le nom,ect  -->
       <img src="images/pokeball_icon.png" id="icon_pokeball">
-      <p id="Nom"> &nbsp;&nbsp;&nbsp;</p>
+      <span id="Nom"> &nbsp;&nbsp;&nbsp;</span>
       <meter id="pdv" min="-100" max="100" value="0" high="50" low="-50">affinity</meter>
 </div>  <!-- boite permettant de mettre le nom,ect  -->
 
@@ -21,8 +21,8 @@
    <div id="menu_right"> <!--Menu a droite -->
      <nav>
         <ul id="ul_menu_right">
-          <li class="li_menu_right" id="button_details"><button class="button_menu_right" onclick="menu('content_details', 'button_details');"  ><img class="icon_menu_right icon_relou" src="images/pokedex.png"><span class="text_menu">Details</span></button></li>
-          <li class="li_menu_right" id="button_dressage"><button class="button_menu_right"  onclick="menu('content_dressage', 'button_dressage');","pokedex();"><img class="icon_menu_right" src="images/clone.png"><span class="text_menu">Dressage</span></button></li>
+          <li class="li_menu_right" id="button_details"><button class="button_menu_right" onclick="menu('content_details', 'button_details')"><img class="icon_menu_right icon_relou" src="images/pokedex.png"><span class="text_menu">Details</span></button></li>
+          <li class="li_menu_right" id="button_dressage"><button class="button_menu_right"  onclick="menu('content_dressage', 'button_dressage')"><img class="icon_menu_right" src="images/clone.png"><span class="text_menu">Dressage</span></button></li>
           <li class="li_menu_right" id="button_activites"><button class="button_menu_right" onclick="menu('content_activites', 'button_activites')"><img class="icon_menu_right" src="images/sac.png"><span class="text_menu">Activités</span></button></li>
           <li class="li_menu_right" id="button_boutique"><button class="button_menu_right" onclick="menu('content_boutique', 'button_boutique')"><img class="icon_menu_right icon_relou" src="images/carte.png"><span class="text_menu">Boutique</span></button></li>
         </ul>
@@ -50,7 +50,7 @@
           <progress id="progress_humeur" value="0" min="0" max="300"></progress>
           <progress id="progress_faim" value="10" min="0" max="300"></progress>
           <progress id="progress_santé" value="50" min="0" max="300"></progress>
-          <progress id="progress_ennuie" value="2" min="0" max="300"></progress>
+          <progress id="progress_ennui" value="2" min="0" max="300"></progress>
         </div> <!--box contenant les DETAILS -->
 
         <div id="content_dressage"> <!--box contenant le DRESSAGE -->
@@ -73,5 +73,6 @@
 
 </div> <!-- wrapper -->
 </body>
+    <script type="text/javascript" src="pokedex.js"></script>
     <script type="text/javascript" src="pokemon.js"></script>
 <html>

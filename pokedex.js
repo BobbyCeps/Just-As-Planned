@@ -1,10 +1,5 @@
-function pokedex() {
-  document.getElementById("content_details").style.display = "none";   /* pour fermer les pages lors du retour a l'acceuil */
-  document.getElementById("content_dressage").style.display = "none";
-  document.getElementById("content_activites").style.display='none';
-  document.getElementById("content_boutique").style.display='none';
 
-
+function pokedex() { /* Pokedex aléatoire dans details */
   var description = ["Magicarpe est virtuellement inutile en combat. Il se contente de faire des ronds dans l’eau. On le considère plutôt faible. Pourtant, ce Pokémon est très robuste et peut survivre dans n’importe quel environnement, même très pollué.",
                      "Magicarpe est un Pokémon ridicule qui ne sait faire que des ronds dans l'eau ou se laisser porter par les courants. Son comportement a donné envie aux savants d'étudier son cas.",
                      "On raconte qu'autrefois, Magicarpe était beaucoup plus puissant qu'aujourd'hui. Il ne sait faire que des ronds et des bonds dans l'eau. Il est malheureusement devenu célèbre pour son inutilité…cet étrange Pokémon a poussé de nombreux chercheurs a étudier son cas, mais aucune théorie plausible n'a été avancée.",
@@ -20,11 +15,12 @@ function pokedex() {
                      "Un Pokémon tout à fait pathétique. C'est à peine s'il peut sauter plus de 2 mètres en hauteur.",
                      "Magicarpe manque totalement de vitesse et de force. C’est le Pokémon le plus pathétique sur terre.",
                      "La puissance de cette créature a beaucoup régressé au fil des siècles."]
-  function melangeur() {
-              return Math.round(Math.random() * 14);
-  }
+
   var resultat = melangeur()
   for (var i=0;i<description.length ;i++)
   document.getElementById("description_pokedex").innerHTML = "<span class='txt_pokedex'> ► &nbsp" + "</span>" +(description[resultat]);
 }
 /* Fonction permettant d'afficher aléatoirement une description de pokedex sur la page d'acceuil */
+function melangeur() {
+            return Math.round(Math.random() * 14);
+}
