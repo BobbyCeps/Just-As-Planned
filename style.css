@@ -1,0 +1,159 @@
+
+body {
+  margin: 0;
+}
+/* box principales pour l'interface du tama */
+#content_nom {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid black;
+  font-family: helvetica;
+}
+
+#content_main {
+  width: 406px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 0px;
+  margin-top: 2px;
+  border-bottom-left-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+#nom {
+  margin: 0px 0px 0px 5px;
+  float: left;
+}
+/* pokeball et barre d'affinité a droite du nom */
+#icon_pokeball {
+  margin-bottom: -5px;
+  float: left;
+  margin-right: 5px;
+}
+
+#pdv {
+  margin-right: 5px;
+  background-color: red;
+  float: right;
+  margin-top: 4px;
+  box-shadow:  0 0 2px 2px #666;
+}
+
+/* menu a droite */
+#menu_right {
+    margin-left: 407px;
+    padding: 0px;
+    height: 32%;
+    width: 100px;
+    position: absolute;
+}
+#ul_menu_right {
+ margin: 0px;
+ margin-top: 60px;
+}
+.li_menu_right {
+  list-style: none;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: -38px;
+  margin-bottom: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 2px;
+  font-size: 0.9em;
+  transition:all .1s ease-out;
+}
+
+.button_menu_right {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+                    /*DANS les boutons */
+.icon_menu_right {
+  margin-bottom: -5%;
+  margin-right: 5px;
+  float: left;
+}
+.icon_relou {
+  margin-top: 2px;
+}
+/* box gauche DANS la content_main */
+#content_left {
+  width: 47%;
+  height: 90%;
+  float: left;
+}
+#content_fond_pkmn {
+  background-image: url("images/pokeball.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 87%;
+  height: 87%;
+  margin-left: 7%;
+  margin-top: 15%;
+  text-align: center;
+}
+#sprite {
+margin-top: 45px;
+margin-left: -17px;
+}
+#numero {
+  margin-left: 1px;
+  margin-top: -20px;
+  font-family: cursive;
+  font-size: 0.6em;
+}
+/* box droite DANS la content_main */
+#content_right {
+  width: 53%;
+  height: 100%;
+  float: left;
+}
+
+      /* Div pokedex */
+#content_pokedex{
+  width: 190px;
+  font-size: 0.8em;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid white;
+  color: #404040;
+  overflow: hidden;
+  padding-left: 4px;
+  margin-left: -388px;
+  margin-top: -2px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: white;
+  font-family: helvetica;
+  position: absolute;
+}
+
+#description_pokedex {
+ margin: 0px;
+}
+.txt_pokedex {
+  color: black;
+}
+
+      /* BOX DETAILS */
+#content_details {
+}
+
+      /* BOX DRESSAGE */
+#content_dressage {
+
+}
+
+    /* BOX ACTIVITES */
+#content_activites {
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAGICARPE FDP</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="pokedex.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+</head>
+<body onload="pokedex()">
+<div id="wrapper">
+
+ <div id="content_nom">  <!-- boite permettant de mettre le nom,ect  -->
+      <img src="images/pokeball_icon.png" id="icon_pokeball">
+      <p id="Nom"> &nbsp;&nbsp;&nbsp;</p>
+      <meter id="pdv" min="-100" max="100" value="0" high="50" low="-50">affinity</meter>
+</div>  <!-- boite permettant de mettre le nom,ect  -->
+
+<!-- <img src="pokeball_icon.png" class="icon_menu_right"> -->
+ <div id="content_main"> <!-- Boite principale -->
+   <div id="menu_right"> <!--Menu a droite -->
+     <nav>
+        <ul id="ul_menu_right">
+          <li class="li_menu_right" id="button_details"><button class="button_menu_right" onclick="menu('content_details', 'button_details');"  ><img class="icon_menu_right icon_relou" src="images/pokedex.png"><span class="text_menu">Details</span></button></li>
+          <li class="li_menu_right" id="button_dressage"><button class="button_menu_right"  onclick="menu('content_dressage', 'button_dressage');","pokedex();"><img class="icon_menu_right" src="images/clone.png"><span class="text_menu">Dressage</span></button></li>
+          <li class="li_menu_right" id="button_activites"><button class="button_menu_right" onclick="menu('content_activites', 'button_activites')"><img class="icon_menu_right" src="images/sac.png"><span class="text_menu">Activités</span></button></li>
+          <li class="li_menu_right" id="button_boutique"><button class="button_menu_right" onclick="menu('content_boutique', 'button_boutique')"><img class="icon_menu_right icon_relou" src="images/carte.png"><span class="text_menu">Boutique</span></button></li>
+        </ul>
+     </nav>
+   </div>  <!--Menu a droite -->
+
+      <div id="content_left"> <!-- box left dans la main-box -->
+        <div id="content_fond_pkmn"> <!-- box du logo derriere le pokemon -->
+          <img id="sprite" src="" alt="sprite">
+        </div> <!-- box du logo derriere le pokemon -->
+      </div> <!-- box left dans la main-box -->
+
+      <div id="content_right"> <!-- box right dans la main-box -->
+
+          <div id="content_pokedex"> <!-- div qui contient la description du pokedex aléatoire -->
+            <p id="description_pokedex"></p>
+          </div>  <!-- div qui contient la description du pokedex aléatoire -->
+
+
+        <div id="acceuil"> <!--div inner droite qui sert de 'page d'acceuil'-->
+          ACCEUIL
+        </div> <!--div inner droite qui sert de 'page d'acceuil'-->
+
+        <div id="content_details"> <!--box contenant les DETAILS -->
+          <progress id="progress_humeur" value="0" min="0" max="300"></progress>
+          <progress id="progress_faim" value="10" min="0" max="300"></progress>
+          <progress id="progress_santé" value="50" min="0" max="300"></progress>
+          <progress id="progress_ennuie" value="2" min="0" max="300"></progress>
+        </div> <!--box contenant les DETAILS -->
+
+        <div id="content_dressage"> <!--box contenant le DRESSAGE -->
+          DRESSAGE
+        </div> <!--box contenant les DETAILS -->
+
+        <div id="content_activites"> <!--box contenant les activités -->
+          ACTIVITES
+        </div> <!--box contenant les activités -->
+
+        <div id="content_boutique"> <!--box contenant la boutique -->
+          BOUTIQUE
+        </div> <!--box contenant la boutique -->
+
+      </div> <!-- box right dans la main-box -->
+
+ </div> <!-- Boite principale -->
+
+
+
+</div> <!-- wrapper -->
+</body>
+    <script type="text/javascript" src="pokemon.js"></script>
+<html>
