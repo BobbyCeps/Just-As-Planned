@@ -1,4 +1,4 @@
-function Pokemon (nom, surnom, numero, sexe, santé, humeur, faim, ennui, image) {
+function Pokemon (nom, surnom, numero, sexe, santé, humeur, faim, ennui, image, date) {
   this.nom = nom;
   this.surnom = surnom;
   this.numero = numero;
@@ -8,11 +8,13 @@ function Pokemon (nom, surnom, numero, sexe, santé, humeur, faim, ennui, image)
   this.faim = faim;
   this.ennui = ennui;
   this.image = image;
+  this.date = new Date();
+
 }
 
-var magicarpe = new Pokemon("Magicarpe", "", 129,"male",0,0,0,0, "images/magikarp.gif");
-var pikachu = new Pokemon("Pikachu", "", 25, "male", 0,0,0,0, "images/pikachu.gif");
-var porygon = new Pokemon("Porygon", "", 137, "male", 0,0,0,0, "images/porygon.gif");
+var magicarpe = new Pokemon("Magicarpe", "", 129,"male",0,0,0,0, "images/magikarp.gif", dateNav);
+var pikachu = new Pokemon("Pikachu", "", 25, "male", 0,0,0,0, "images/pikachu.gif", dateNav);
+var porygon = new Pokemon("Porygon", "", 137, "male", 0,0,0,0, "images/porygon.gif", dateNav);
 
 document.getElementById("sprite").src = magicarpe.image;
 document.getElementById("Nom").innerHTML = magicarpe.nom ;

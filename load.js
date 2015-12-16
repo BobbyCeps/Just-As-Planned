@@ -1,7 +1,12 @@
+var dateNav = new Date();
+
 function load_all() {
   pokedex(); /* apelle la fonction pokedex */
 
-  var date = new Date(); /* OBJET DATE NIGGA */
+  dateNav = Date.now();
+
+window.alert(dateNav);
+
 
     /* pour fermer les pages lors du retour a l'acceuil */
   document.getElementById("content_details").style.display = "none";
