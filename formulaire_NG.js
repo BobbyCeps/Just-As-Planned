@@ -13,15 +13,22 @@ function new_game() {
 }
 
 function valider(){
-
+ var login = document.getElementById("login").value;
+ var mdp = document.getElementById("mdp").value;
+ if(localStorage.getItem(login)== mdp){
+   document.location.href="index.html";
+ }
+ else {
+   {
+     window.alert("ERROR ERROR");
+   }
+ }
 }
 
 function creation(){
   var nom = document.getElementById("login_ng").value;
   var mdp = document.getElementById("mdp_ng").value;
   var choix_pokemon = document.getElementById("select").value;
-  window.alert(nom);
-  window.alert(mdp);
   localStorage[nom]= mdp;
   var pokemon = new Pokemon("",0,0,0,0,"");
   window.alert(pokemon.nom);
