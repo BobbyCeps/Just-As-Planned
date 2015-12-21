@@ -26,4 +26,6 @@ function creation(){
   var pokemon = new Pokemon("",0,0,0,0,"");
   window.alert(pokemon.nom);
   window.alert(pokemon.image);
+  window.alert(pokemon.date);
+  localStorage.setItem(JSON.stringify(pokemon));
 }
