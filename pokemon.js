@@ -1,7 +1,6 @@
 function Pokemon (nom, surnom, numero, sexe, santé, humeur, faim, ennui, image, date) {
   this.nom = nom;
   this.surnom = surnom;
-  this.numero = numero;
   this.sexe = sexe;
   this.santé = santé;
   this.humeur = humeur;
@@ -9,8 +8,6 @@ function Pokemon (nom, surnom, numero, sexe, santé, humeur, faim, ennui, image,
   this.ennui = ennui;
   this.image = image;
   this.date = Date.now();
-  var dateDiff = this.date - dateNav;
-  savePokemon(this);
 
   this.update = function() {
     this.faim += 5;

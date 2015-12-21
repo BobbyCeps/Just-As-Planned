@@ -7,13 +7,29 @@
     <script type="text/javascript" src="formulaire_NG.js"></script>
 </head>
 <body>
-   <div id="content_main"> <!-- Boite principale -->
-     LOGIN
-     <input id="login"></input><br>
-     MDP
-     <input id="mdp"></input><br>
-     <button id="button_valider" onclick="valider">Valider</button>
-     <button id="button_new_game" onclick="formulaire_NG">NEW GAME</button>
-   </div> <!-- Boite principale -->
+   <div id="content_log"> <!-- Boite Login-->
+     <p>Login</p><br>
+     <input id="login"></input>
+     <p>Mot de passe</p>
+     <input id="mdp"></input>
+     <button id="button_valider" onclick="valider()">Valider</button><br>
+     <a href="#" onclick="new_game()">Pas encore de compte ?</a>
+   </div> <!-- Boite Login -->
+
+   <div id="content_NG">
+     <p>Login</p>
+     <input id="login_ng"></input>
+     <p>Mdp</p>
+     <input id="mdp_ng"></input>
+     <form>
+     <p>Pokemon</p>
+     <select id="select" name="pokemon">
+     <option value="Pikachu">Pikachu</option>
+     <option value="Magicarpe">Magicarpe</option>
+     <option value="Porygon">Porygon</option>
+     </select>
+     </form>
+     <button onclick="creation()">Valider</button>
+   </div>
 </body>
 <html>
