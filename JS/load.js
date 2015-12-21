@@ -1,6 +1,18 @@
+/*var dateNav = new Date;
+var magicarpe;
+
+magicarpe = loadPokemon("Magicarpe");
+porygon = loadPokemon("Porygon");
+if(!magicarpe) {
+  magicarpe = new Pokemon("Magicarpe", "", 129,"male",0,0,0,0, "images/magikarp.gif", dateNav);
+}
+if(!porygon) {
+  porygon = new Pokemon("Porygon", "", 137,"unknow",0,0,0,0, "images/porygon.gif", dateNav);
+}
+*/
 
 function load_all() {
-
+  pokedex(); /* apelle la fonction pokedex */
   dateNav = Date.now(); /* apelle l'objet dateNav */
 
 
@@ -22,7 +34,3 @@ function load_all() {
   document.getElementById("progress_ennui").value = magicarpe.ennui */
 
 } /* fin fonction load_all */
-
-function new_game() {
-
-}

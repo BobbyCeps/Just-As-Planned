@@ -7,15 +7,15 @@
     <script type="text/javascript" src="pokemon.js"></script>
     <script type="text/javascript" src="load.js"></script>
     <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="formulaire_NG.js"></script>
 </head>
 <body onload="load_all()">
-<div id="wrapper">
-
+<div id="wrapper" onload="new_game()">
  <div id="content_nom">  <!-- boite permettant de mettre le nom,ect  -->
       <img src="images/pokeball_icon.png" id="icon_pokeball">
       <span id="Nom"> &nbsp;&nbsp;&nbsp;</span>
       <meter id="pdv" min="-100" max="100" value="0" high="50" low="-50">affinity</meter>
-</div>  <!-- boite permettant de mettre le nom,ect  -->
+ </div>  <!-- boite permettant de mettre le nom,ect  -->
 
 <!-- <img src="pokeball_icon.png" class="icon_menu_right"> -->
  <div id="content_main"> <!-- Boite principale -->
@@ -44,14 +44,14 @@
 
 
         <div id="acceuil"> <!--div inner droite qui sert de 'page d'acceuil'-->
-          ACCUEIL
+          acceuil  
         </div> <!--div inner droite qui sert de 'page d'acceuil'-->
 
         <div id="content_details"> <!--box contenant les DETAILS -->
-          <progress id="progress_humeur" value="0" min="0" max="300"></progress>
-          <progress id="progress_faim" value="0" min="0" max="300"></progress>
-          <progress id="progress_santé" value="0" min="0" max="300"></progress>
-          <progress id="progress_ennui" value="0" min="0" max="300"></progress>
+          <progress id="progress_humeur" value="0" min="0" max="100"></progress>
+          <progress id="progress_faim" value="0" min="0" max="100"></progress>
+          <progress id="progress_santé" value="0" min="0" max="100"></progress>
+          <progress id="progress_ennui" value="0" min="0" max="100"></progress>
         </div> <!--box contenant les DETAILS -->
 
         <div id="content_dressage"> <!--box contenant le DRESSAGE -->
