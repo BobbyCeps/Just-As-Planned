@@ -13,16 +13,13 @@ function load_all() {
   document.getElementById("content_pokedex").style.display='none';
 
 
-  /* on affiche magicarpe */
-/*  document.getElementById("sprite").src = magicarpe.image;
-  document.getElementById("Nom").innerHTML = magicarpe.nom ;
-  document.getElementById("progress_santé").value = magicarpe.santé
-  document.getElementById("progress_humeur").value = magicarpe.humeur
-  document.getElementById("progress_faim").value = magicarpe.faim
-  document.getElementById("progress_ennui").value = magicarpe.ennui */
+  /* on affiche le pokemon */
+  var pokemon = JSON.parse(localStorage.getItem('Pokemon'));
+  document.getElementById("sprite").src = pokemon.image;
+  document.getElementById("nom").innerHTML = pokemon.nom ;
+  document.getElementById("progress_santé").value = pokemon.santé;
+  document.getElementById("progress_humeur").value = pokemon.humeur;
+  document.getElementById("progress_faim").value = pokemon.faim;
+  document.getElementById("progress_ennui").value = pokemon.ennui;
 
 } /* fin fonction load_all */
-
-function new_game() {
-
-}

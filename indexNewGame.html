@@ -7,16 +7,18 @@
     <script type="text/javascript" src="formulaire_NG.js"></script>
 </head>
 <body>
+  <div id="content_main"> <!-- box CONTENT ALL -->
    <div id="content_log"> <!-- Boite Login-->
-     <p>Login</p><br>
+     <p class="titre_login">Login:</p><br>
      <input id="login"></input>
-     <p>Mot de passe</p>
+     <p class="titre_login">Mot de passe:</p>
      <input id="mdp"></input>
-     <button id="button_valider" onclick="valider()">Valider</button><br>
+     <button id="button_valider" onclick="valider()">Go !</button><br>
      <a href="#" onclick="new_game()">Pas encore de compte ?</a>
    </div> <!-- Boite Login -->
 
-   <div id="content_NG">
+   <div id="content_ng">
+    <div id="ng_content_left"> <!-- content left du la box new game -->
      <p>Login</p>
      <input id="login_ng"></input>
      <p>Mdp</p>
@@ -29,7 +31,12 @@
      <option value="Porygon">Porygon</option>
      </select>
      </form>
-    <button onclick="creation()">Valider</button>
+   </div> <!-- content left du la box new game -->
+   <div id="ng_content_right"> <!-- content right du la box new game -->
+     <p id="presentation"><br><br> Bienvenue dans le monde des Pokémon.<br>Indique ton pseudonyme ainsi qu'un mot de passe, et choisit ton Pokémon favori.</p>
+    <button id="button_creation" onclick="creation()">Valider</button> <!-- bouton pour lancer la creation d'un nouveau profil -->
+   </div> <!-- content right du la box new game -->
    </div>
+ </div> <!-- box CONTENT ALL -->
 </body>
 <html>

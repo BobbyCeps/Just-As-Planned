@@ -37,7 +37,6 @@ body {
 
 #pdv {
   margin-right: 5px;
-  background-color: red;
   float: right;
   margin-top: 4px;
   box-shadow:  0 0 2px 2px #666;
@@ -140,7 +139,7 @@ margin-left: -17px;
 
       /* BOX DETAILS */
 #content_details {
-  
+
 }
 
       /* BOX DRESSAGE */

@@ -1,4 +1,4 @@
-function Pokemon (nom, santé, humeur, faim, ennui, image, date) {
+  function Pokemon (nom, santé, humeur, faim, ennui, image, date) {
   this.nom = document.getElementById("select").value;
   this.santé = santé;
   this.humeur = humeur;
@@ -9,7 +9,7 @@ function Pokemon (nom, santé, humeur, faim, ennui, image, date) {
 }
 function new_game() {
   document.getElementById("content_log").style.display = "none";
-  document.getElementById("content_NG").style.display = "block";
+  document.getElementById("content_ng").style.display = "block";
 }
 
 function valider(){
@@ -33,5 +33,5 @@ function creation(){
   var pokemon = new Pokemon("",0,0,0,0,"");
   localStorage.setItem("Pokemon", JSON.stringify(pokemon));
   document.getElementById("content_log").style.display = "block";
-  document.getElementById("content_NG").style.display = "none";
+  document.getElementById("content_ng").style.display = "none";
 }
