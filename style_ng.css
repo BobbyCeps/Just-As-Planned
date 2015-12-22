@@ -3,12 +3,14 @@ body {
   background-color: grey;
 }
 #content_log {
-
-  width: 400px;
-  height: 500px;
-  display: block;
+  background-image: url("oak.gif");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 380px;
+  height: 200px;
   font-family: helvetica;
   margin-left: 7px;
+  float: left;
 }
 
 #content_ng {
@@ -63,4 +65,23 @@ input {
 /* text dans ng_content_right */
 #presentation {
   font-size: 0.8em;
+}
+/* MINIATURE POKEMON DE LA LISTE */
+#sala {
+background-image: url("mini/Salamèche.png");
+background-repeat: no-repeat;
+background-position: right;
+background-size: contain;
+}
+#cara {
+  background-image: url("mini/Carapuce.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+#bulbi {
+  background-image: url("mini/Bulbizzare.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }

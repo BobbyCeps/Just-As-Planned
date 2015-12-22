@@ -4,7 +4,7 @@
   this.humeur = humeur;
   this.faim = faim;
   this.ennui = ennui;
-  this.image = "images/" + this.nom + ".gif";
+  this.image = "sprite/" + this.nom + ".gif";
   this.date = Date.now();
 }
 function new_game() {
