@@ -2,6 +2,7 @@
 body {
   margin: 0;
 }
+
 /* box principales pour l'interface du tama */
 #content_nom {
   margin-top: 75px;
@@ -152,4 +153,20 @@ margin-left: -14px;
 
 }
 
-  /* New Game *
+/* FOOTER */
+footer {
+  width: 100%;
+  position: absolute; bottom: 0;
+}
+#p_foot {
+  text-align: center;
+  margin: 0;
+  font-size: 0.6em;
+  font-family: sans-serif;
+}
+#copyright {
+  text-align: center;
+  margin: 0;
+  font-size: 0.6em;
+  font-family: sans-serif;
+}

@@ -2,6 +2,7 @@
 body {
   background-color: grey;
 }
+/* box connection */
 #content_log {
   background-image: url("oak.gif");
   background-repeat: no-repeat;
@@ -12,7 +13,6 @@ body {
   margin-left: 7px;
   float: left;
 }
-
 #content_ng {
   display: none;
   font-family: helvetica;
@@ -20,6 +20,9 @@ body {
 
 a {
   font-size: 0.8em;
+  position: fixed;
+  margin-top: 65px;
+  margin-left: 70px;
 }
 
 #content_log p {
@@ -34,7 +37,6 @@ a {
 #content_main {
   width: 406px;
   height: 200px;
-
   padding: 0px;
   margin-top: 100px;
   border-bottom-left-radius: 20px;
@@ -58,13 +60,21 @@ a {
   width: 49%;
   margin-left: -35px;
   padding-left: 15px;
+  margin-top: 28px;
 }
 input {
   width: 150px;
 }
-/* text dans ng_content_right */
+/* text+ bouton dans ng_content_right */
+#button_creation {
+  float: right;
+  margin-top: 28px;
+}
 #presentation {
+  clear: both;
   font-size: 0.8em;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
 }
 /* MINIATURE POKEMON DE LA LISTE */
 #sala {
