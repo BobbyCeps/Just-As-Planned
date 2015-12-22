@@ -1,6 +1,4 @@
-
-function pokedex() { /* Pokedex aléatoire dans details */
-  var description = ["Magicarpe est virtuellement inutile en combat. Il se contente de faire des ronds dans l’eau. On le considère plutôt faible. Pourtant, ce Pokémon est très robuste et peut survivre dans n’importe quel environnement, même très pollué.",
+var description = ["Magicarpe est virtuellement inutile en combat. Il se contente de faire des ronds dans l’eau. On le considère plutôt faible. Pourtant, ce Pokémon est très robuste et peut survivre dans n’importe quel environnement, même très pollué.",
                      "Magicarpe est un Pokémon ridicule qui ne sait faire que des ronds dans l'eau ou se laisser porter par les courants. Son comportement a donné envie aux savants d'étudier son cas.",
                      "On raconte qu'autrefois, Magicarpe était beaucoup plus puissant qu'aujourd'hui. Il ne sait faire que des ronds et des bonds dans l'eau. Il est malheureusement devenu célèbre pour son inutilité…cet étrange Pokémon a poussé de nombreux chercheurs a étudier son cas, mais aucune théorie plausible n'a été avancée.",
                      "Autrefois, il était beaucoup plus puissant que cette créature minablement faible.",
@@ -19,8 +17,8 @@ function pokedex() { /* Pokedex aléatoire dans details */
   var resultat = melangeur()
   for (var i=0;i<description.length ;i++)
   document.getElementById("description_pokedex").innerHTML = "<span class='txt_pokedex'> ► &nbsp" + "</span>" +(description[resultat]);
-}
+
 /* Fonction permettant d'afficher aléatoirement une description de pokedex sur la page d'acceuil */
 function melangeur() {
             return Math.round(Math.random() * 14);
-}
+  }
